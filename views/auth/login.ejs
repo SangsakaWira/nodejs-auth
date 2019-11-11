@@ -1,0 +1,10 @@
+<h1><%= title %></h1>
+<form action="/login" method="POST">
+    <input type="email" placeholder="Email" name="email">
+    <input type="password" placeholder="Password" name="password">
+    <input type="submit" value="SUBMIT">
+</form>
+<p>Don't have an account? <a href="/register">Sign Up</a></p>
+<% if(message != null){ %>
+    <p><%= message %></p>
+<% } %>
